@@ -1,0 +1,27 @@
+# Dependências e pacotes
+node_modules/
+package-lock.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Arquivos sensíveis
+.env
+
+# Cypress: artefatos de teste
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+cypress/downloads/
+cypress/results/
+cypress/.cache/
+
+# VS Code: configurações locais
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
