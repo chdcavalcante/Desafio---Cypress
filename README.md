@@ -31,8 +31,8 @@ npm -v
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/seu-projeto.git
-cd seu-projeto
+git clone https://github.com/chdcavalcante/Desafio---Cypress.git
+cd Desafio---Cypress
 
 # Instalar dependências do projeto
 npm install
@@ -57,3 +57,26 @@ npx cypress run --browser electron
 ```bash
 npx cypress open
 ```
+
+---
+
+## ⚙️ Integração com GitHub Actions
+
+Este projeto está integrado com **GitHub Actions**, permitindo que os testes Cypress sejam executados automaticamente a cada `push` ou `pull request` para as branches `main`, `master` ou `desenvolvimento`.
+
+O workflow está definido em:
+
+```
+.github/workflows/cypress.yml
+```
+
+### 🔁 Quando a pipeline é executada:
+
+- Push para `main`, `master` ou `desenvolvimento`
+- Pull request para `main`, `master` ou `desenvolvimento`
+
+### 🧪 O que a pipeline faz:
+
+- Instala o Node.js na versão correta
+- Instala as dependências do projeto
+- Executa os testes Cypress em modo headless
